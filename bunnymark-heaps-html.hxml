@@ -1,0 +1,15 @@
+-js web/html/main.js
+-cp src
+-main gasm.examples.heaps.bunnymark.Main
+
+-lib heaps
+-lib castle
+-lib gasm
+-lib gasm-heaps
+-lib msignal
+
+-dce full
+-D resourcesPath=assets
+-D source-map-content
+--macro include('h2d')
+-debug

@@ -1,0 +1,16 @@
+-swf web/swf/main.swf
+-swf-header 800:600:60:FFFFFF
+-swf-version 11.8
+
+-cp src
+-main gasm.examples.heaps.bunnymark.Main
+
+-lib heaps
+-lib gasm
+-lib castle
+-lib gasm-heaps
+
+-dce full
+-D resourcesPath=assets
+# -D advanced-telemetry
+--macro include('h2d')

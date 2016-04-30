@@ -1,0 +1,23 @@
+<project>
+	<!-- NMML reference: https://gist.github.com/1763850 -->
+	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
+	<meta title="GASM examples OpenFL Bunnymark" company="Leo Bergman" version="1.0.0" package="gasm.examples.openfl.bunnymark"/>
+	<!-- output -->
+	<app path="bin" file="GASM" main="gasm.examples.openfl.bunnymark.Main"/>
+	<window fps="61" height="600" width="800" background="#000000" />
+	<window hardware="true" allow-shaders="true" require-shaders="true" depth-buffer="false" stencil-buffer="false" />
+	<!-- classpath, haxe libs -->
+
+	<source path="src"/>
+		
+	<haxelib name="openfl"/>
+	<haxelib name="gasm"/>
+	<haxelib name="gasm-openfl"/>
+
+	<!-- assets -->
+	<icon path="assets/openfl.svg"/>
+	<assets path="assets"/>
+	<!-- optimize output <haxeflag name="-dce full" /> -->
+	<haxeflag name="-D advanced-telemetry" if="flash"/>
+
+</project>
